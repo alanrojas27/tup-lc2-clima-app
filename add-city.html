@@ -6,6 +6,7 @@
     <title>Clima APP</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/pages/add.city.css">
   </head>
   <body>
     <header>
@@ -14,7 +15,7 @@
       </h1>
       <nav>
         <ul>
-          <li><a href="/index.html">Mi App</a></li>
+          <li><a href="/index.html">Clima</a></li>
           <li class="current-page"><a href="/add-city.html">Agregar Ciudad</a></li>
           <li><a href="/help.html">Ayuda</a></li>
         </ul>
@@ -26,14 +27,22 @@
       <section >
         <!-- Sección donde se debe colocar el formulario, con el select y el
 botón de consultar -->
-          <form action="">
+          <form action="" class="form">
             <label for="city">Ingrese una ciudad a agregar:</label>
-            <input type="text" name="city" id="city">
-            <button>Agregar</button>
+            <input type="text" name="city" id="city" class="select">
+            <br>
+            <button class="btn">Agregar</button>
           </form>
       </section>
-      <section id="section-weather-result">
-        <!-- Sección donde se debe mostrar el clima de la ciudad -->
+      <br>
+      <br>
+      <br>
+      <section class="aviso">
+        <div class="aviso-check">Ciudad agregada con exito</div>
+        <br>
+        <div class="aviso-error">La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</div>
+        <br>
+        <div class="aviso-warning">La ciudad ingresada ya se encuentra almacenada</div>
       </section>
     </main>
     <footer>

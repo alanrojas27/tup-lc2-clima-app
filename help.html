@@ -14,7 +14,7 @@
       </h1>
       <nav>
         <ul>
-          <li><a href="/index.html">Mi App</a></li>
+          <li><a href="/index.html">Clima</a></li>
           <li><a href="/add-city.html">Agregar Ciudad</a></li>
           <li class="current-page"><a href="/help.html">Ayuda</a></li>
         </ul>
@@ -23,12 +23,12 @@
     <!-- Contenido principal de la página -->
     <main>
       <h2>Ayuda Clima APP v1.0</h2>
-      <section id="form-city-list">
+      <section class="section-help">
         <!-- Sección donde se debe colocar el formulario, con el select y el
 botón de consultar -->
           <p>Esta app te permite consultar el clima de una ciudad en particular utilizando la API de <a href="https://openweathermap.org/api" target=“_blank”>OpenWeatherMap</a></p>
           <p>Para poder consultar el clima debera primero debera <a href="./add-city.html">Agregar una ciudad</a> y luego seleccionar la Ciudad en cuestion desde la pagina <a href="./index.html">Clima</a></p>
-          <form action="">
+          <form action="" class="form-help">
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre">
             <br>
@@ -37,12 +37,16 @@ botón de consultar -->
             <br>
             <label for="msj">Mensaje</label>
             <textarea name="msj" id="msj" cols="30" rows="10"></textarea>
-            <button>Limpiar</button>
-            <button>Enviar</button>
+            <div>
+              <button class="btn">Limpiar</button>
+              <button class="btn">Enviar</button>
+            </div>
           </form>
+          <br>
+          <br>
       </section>
-      <section id="section-weather-result">
-        <!-- Sección donde se debe mostrar el clima de la ciudad -->
+      <section class="aviso">
+        <div class="aviso-error">Ingrese un Email valido</div>
       </section>
     </main>
     <footer>
